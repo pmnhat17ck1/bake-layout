@@ -5,7 +5,7 @@
 }
 html {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 12px;   
 }
 .btn{
     border: 2px solid #fff;
@@ -54,7 +54,7 @@ header nav ul{
 header nav ul li{
     display: inline;
     padding: 0 1rem;
-    margin:  0 2px;
+    margin:  0 2.5px;
 
 }
 header nav ul li a{
@@ -153,10 +153,12 @@ header nav ul li:hover a{
 .intro__item h1 {
     padding: 20px 0;
     font-size: 28px;
+    font-weight: 700;
 }
 .intro__item p {
    opacity: 0.7;
    font-size: 1.2rem;
+   font-weight: 400;
 }
 .intro__item div {
     padding:0 50px;
@@ -194,6 +196,7 @@ header nav ul li:hover a{
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.2rem;
+  padding: 2rem 0;
  
 }
 #service h3{
@@ -234,6 +237,7 @@ header nav ul li:hover a{
     color: #000;
     letter-spacing: 2px;
     margin: 17px 0px;
+    font-weight: 500;
 }
 #service .service__item p{
     line-height: 25px;
