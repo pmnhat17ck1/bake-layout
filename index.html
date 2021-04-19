@@ -12,6 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
@@ -123,25 +128,25 @@
         <h3>our services</h3>
         <div class="service__content">
             <div class="service__item">
-                <span class="fas fa-adjust "></span>
+                <i class="fas fa-adjust "></i>
                 <h4>Tasty Cakes</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
                 <button class="btn">Learn more</button>
             </div>
             <div class="service__item">
-                <span class="far fa-snowflake "></span>
+                <i class="far fa-snowflake "></i>
                 <h4>Creativity</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
                 <button class="btn">Learn more</button>
             </div>
             <div class="service__item">
-                <span class="fas fa-chart-pie "></span>
+                <i class="fas fa-chart-pie "></i>
                 <h4>Tradition</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
                 <button class="btn">Learn more</button>
             </div>
             <div class="service__item">
-                <span class="fab fa-slideshare "></span>
+                <i class="fab fa-slideshare "></i>
                 <h4>Quality</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
                 <button class="btn">Learn more</button>
@@ -149,10 +154,70 @@
         </div>
     </section>
     <section id="gallery">
-        <h3>our gallery</h3>
-        <div class="gallery__item">
-            
+        <h3 class="wow animate__animated animate__bounce">our gallery</h3>
+        <div class="gallery__content">
+            <div class="gallery__item item__1">
+                <img src="./images/g1.jpg" alt="g1">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="./images/g2.jpg" alt="g2">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="./images/g3.jpg" alt="g3">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="gallery__item">
+                <img src="./images/g4.jpg" alt="g4">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="gallery__item ">
+                <img src="./images/g5.jpg" alt="g5">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="gallery__item item__6 ">
+                <img src="./images/g6.jpg" alt="g6">
+                <div class="text">
+                    <h4>
+                        <span>our</span>
+                        <span>gallery</span>
+                    </h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
         </div>
+       
     </section>
     <section id="team"></section>
     <footer></footer>
@@ -163,6 +228,8 @@
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous"></script>
     <script src="./lib/countup/jquery.countup.min.js"></script>
+    <script src="./lib/wowjs/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script>
         $(".counter").countUp();
 
