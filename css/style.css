@@ -8,11 +8,13 @@ html {
     font-size: 12px;   
 }
 .btn{
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     background-color: #ff0e83;
+    font-family: 'Segoe UI', sans-serif;
     color: white;
     border-radius: 5px;
     transition: all 0.5s;
+    font-size: 1.2rem;
 }
 .btn:hover{
     border: 1px solid #ff0e83;
@@ -29,7 +31,7 @@ header {
     background-color: #4E2A84;
     padding: 1.4rem 28rem;
     align-items: center;
-    height: 88px;
+    height: 87px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -73,38 +75,40 @@ header nav ul li:hover a{
 }
 /* carousel */
 #carousel {
-    margin-top: 65px;
+    
     background: url(../images/b3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    min-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #carousel .carousel__content {
+    margin-top: 120px;
     text-align: center;
     color: white;
    
 }
 #carousel .carousel__content h1{
    text-transform: capitalize;
-   font-size: 5rem;
+   font-size: 4.9rem;
    font-weight: 600;
+   letter-spacing: 1px;
     
 }
 #carousel .carousel__content p{
-    opacity: 0.7;
-    font-size: 1.2rem;
-    margin: 1.3rem 0;
-    letter-spacing: 2px;
+    opacity: 0.8;
+    font-size: 1.33rem;
+    letter-spacing: 1.5px;
+    padding: 23px 0;
 }
 #carousel .carousel__content button {
+    
     width: 162px;
     height:48px;
     text-transform: uppercase;
-    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -192,71 +196,81 @@ header nav ul li:hover a{
 /* service */
 #service{
   background: url(../images/s1.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 1.2rem;
-  padding: 2rem 0;
- 
+  padding: 6rem 0;
+  
 }
 #service h3{
     text-align: center;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 4.2rem;
     margin-bottom: 4rem;
     text-transform: uppercase;
     color: white;
+    letter-spacing: 2px;
 }
-#service .service__contain{
-    padding: 4rem 15px;
-    margin: 0 auto;
-    width: 75%;
-}
-#service .service__list{
+#service .service__content{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     padding-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
 }
 #service .service__item{
     padding: 0 15px;
 }
 #service .service__item span{
-    font-size: 60px;
+    font-size: 5rem;
     border: 1px solid #4e2a84;
     width: 105px;
     height: 108px;
-    line-height: 110px;
+    line-height: 9.2rem;
     border-radius: 50%;
     background: #fff;
     color: #4e2a84;
     transition: 0.5s all;
 }
 #service .service__item h4{
-    font-size: 26px;
+    font-size: 2.2rem;
     color: #000;
     letter-spacing: 2px;
     margin: 17px 0px;
     font-weight: 500;
 }
 #service .service__item p{
-    line-height: 25px;
+    line-height: 2.1rem;
     color: #000;
     padding-bottom: 1rem;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 #service .service__item button{
-    font-size: 14px;
     padding: 12px 27px;
     margin-top: 1.2rem;
+    font-weight: 400;
+    border: 2px solid #fff;
 }
-#service .service__item:hover span,#service .service__item button:hover span{
+#service .service__item:hover span,#service .service__item button:hover{
     color: #FF0E83;
 }
-
-
-
-
+#service .service__item button:hover {
+    border: 2px solid #ff0e83;
+}
+/* Gallery */
+#gallery {
+    padding: 6rem 0;
+}
+#gallery h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+}
 
 
 

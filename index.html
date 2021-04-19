@@ -57,7 +57,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
                     cumque quae illo quis sapiente laudantium harum veniam enim
-                    provident. 
+                    provident.
                 </p>
             </div>
         </div>
@@ -80,7 +80,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
                     cumque quae illo quis sapiente laudantium harum veniam enim
-                    provident. 
+                    provident.
                 </p>
             </div>
         </div>
@@ -93,7 +93,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum
                     cumque quae illo quis sapiente laudantium harum veniam enim
-                    provident. 
+                    provident.
                 </p>
             </div>
         </div>
@@ -120,38 +120,40 @@
         </div>
     </section>
     <section id="service">
-       <div class="service__contain">
-           <h3>our services</h3>
-           <div class="service__list">
-               <div class="service__item">
-                   <span class="fas fa-adjust banner-icon"></span>
-                   <h4>Tasty Cakes</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <button class="btn">Learn more</button>
-               </div>
-               <div class="service__item">
-                   <span class="far fa-snowflake banner-icon"></span>
-                   <h4>Creativity</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <button class="btn">Learn more</button>
-               </div>
-               <div class="service__item">
-                   <span class="fas fa-chart-pie banner-icon"></span>
-                   <h4>Tradition</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <button class="btn">Learn more</button>
-               </div>
-               <div class="service__item">
-                   <span class="fab fa-slideshare banner-icon"></span>
-                   <h4>Quality</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                   <button class="btn">Learn more</button>
-               </div>
-           </div>
-       </div>
-      
+        <h3>our services</h3>
+        <div class="service__content">
+            <div class="service__item">
+                <span class="fas fa-adjust "></span>
+                <h4>Tasty Cakes</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
+                <button class="btn">Learn more</button>
+            </div>
+            <div class="service__item">
+                <span class="far fa-snowflake "></span>
+                <h4>Creativity</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
+                <button class="btn">Learn more</button>
+            </div>
+            <div class="service__item">
+                <span class="fas fa-chart-pie "></span>
+                <h4>Tradition</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
+                <button class="btn">Learn more</button>
+            </div>
+            <div class="service__item">
+                <span class="fab fa-slideshare "></span>
+                <h4>Quality</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.alias alias</p>
+                <button class="btn">Learn more</button>
+            </div>
+        </div>
     </section>
-    <section id="gallery"></section>
+    <section id="gallery">
+        <h3>our gallery</h3>
+        <div class="gallery__item">
+            
+        </div>
+    </section>
     <section id="team"></section>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -170,12 +172,12 @@
             delay: 10,
         });
         $("header nav ul a").on("click", function (e) {
-        // 1
-        e.preventDefault();
-        // 2
-        const href = $(this).attr("href");
-        // 3
-        $("html, body").animate({ scrollTop: $(href).offset().top }, 1200);
+            // 1
+            e.preventDefault();
+            // 2
+            const href = $(this).attr("href");
+            // 3
+            $("html, body").animate({ scrollTop: $(href).offset().top }, 1200);
         });
     </script>
 </body>
