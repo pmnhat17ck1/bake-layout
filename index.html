@@ -13,10 +13,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- animate -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- lightbox -->
+    <link rel="stylesheet" href="./lib/lightbox/css/lightbox.min.css">
 </head>
 
 <body>
@@ -25,7 +24,7 @@
         <a class="header-brand" href="">bake</a>
         <nav>
             <ul>
-                <li><a href="#home" class="active">home</a></li>
+                <li><a href="" class="active">home</a></li>
                 <li><a href="#intro">about</a></li>
                 <li><a href="#service">service</a></li>
                 <li><a href="#gallery">gallery</a></li>
@@ -42,6 +41,7 @@
             <button class="btn">learn more</button>
         </div>
     </section>
+    <!-- intro -->
     <section id="intro">
         <div class="intro__item tradition">
             <div>
@@ -106,6 +106,7 @@
             <img src="./images/ab4.jpg" alt="ab4" />
         </div>
     </section>
+    <!-- count -->
     <section id="count">
         <div class="count__item">
             <p class="counter">3500</p>
@@ -124,6 +125,7 @@
             <h3>expert worker</h3>
         </div>
     </section>
+    <!-- service -->
     <section id="service">
         <h3>our services</h3>
         <div class="service__content">
@@ -153,10 +155,12 @@
             </div>
         </div>
     </section>
+    <!-- gallery -->
     <section id="gallery">
         <h3 class="wow animate__animated animate__bounce">our gallery</h3>
         <div class="gallery__content">
             <div class="gallery__item item__1">
+                <a href="./images/g1.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g1.jpg" alt="g1">
                 <div class="text">
                     <h4>
@@ -165,8 +169,10 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+                </a>
             </div>
             <div class="gallery__item">
+                <a href="./images/g2.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g2.jpg" alt="g2">
                 <div class="text">
                     <h4>
@@ -175,8 +181,10 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+            </a>
             </div>
             <div class="gallery__item">
+                <a href="./images/g3.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g3.jpg" alt="g3">
                 <div class="text">
                     <h4>
@@ -185,8 +193,10 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+            </a>
             </div>
             <div class="gallery__item">
+                <a href="./images/g4.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g4.jpg" alt="g4">
                 <div class="text">
                     <h4>
@@ -195,8 +205,10 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+            </a>
             </div>
             <div class="gallery__item ">
+                <a href="./images/g5.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g5.jpg" alt="g5">
                 <div class="text">
                     <h4>
@@ -205,8 +217,10 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+            </a>
             </div>
             <div class="gallery__item item__6 ">
+                <a href="./images/g6.jpg"data-lightbox="image-1" data-title="My caption">
                 <img src="./images/g6.jpg" alt="g6">
                 <div class="text">
                     <h4>
@@ -215,11 +229,23 @@
                     </h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                 </div>
+                </a>
             </div>
         </div>
-       
+
     </section>
-    <section id="team"></section>
+    <!-- bake team -->
+    <section id="bake__team">
+        <h3>bake team</h3>
+        <div class="team__content">
+            <div class="team__item"></div>
+            <div class="team__item"></div>
+            <div class="team__item"></div>
+            <div class="team__item"></div>
+            <div class="team__item"></div>
+            <div class="team__item"></div>
+        </div>
+    </section>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -227,9 +253,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
         integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
         crossorigin="anonymous"></script>
+    <!-- countup -->
     <script src="./lib/countup/jquery.countup.min.js"></script>
+    <!-- wow -->
     <script src="./lib/wowjs/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <!-- lightbox -->
+    <script src="./lib/lightbox/js/lightbox.min.js"></script>
     <script>
         $(".counter").countUp();
 
