@@ -36,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     font-family: 'Segoe UI', sans-serif;;
 }
 
@@ -329,7 +329,7 @@ header nav ul li:hover a{
        content: "";
        display: block;
        width: 100%;
-       height: 5px;
+       height: 4px;
        background-color: white;
        margin-top: 0.5rem;
        opacity: 0;
@@ -354,10 +354,418 @@ header nav ul li:hover a{
 }
 /* bake team */
 #bake__team {
+   background-color: #4E2A84;
+   padding: 70px 0; 
+}
+#bake__team h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+}
+#bake__team .team__content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 78%;
+    margin: 4rem auto;
+}
+.team__content .team__item img{
+    width: 100%;
+}
+.team__content .team__item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.team__content .team__item .item__content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff0e83;
+    padding: 2.5rem;
+    color: white;
+}
+.team__content .team__item .item__content h2{
+    font-size: 1.7rem;
+    font-weight: 600;
 
 }
-.team__content{
 
+ .team__item .item__content h3{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 15px;
+    transition: all 0.5s;
+}
+ .team__item .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 45px;
+    line-height: 2;
+    padding: 10rem 3rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.team__item:hover .overlay{
+    opacity: 1;
+ }
+ .team__item:hover .item__content{
+    opacity: 0;
+ }
+.overlay .text h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #ff0e83;  
+}
+.overlay .text h3{
+    font-size: 1.2rem;
+    font-weight: 400;   
+}
+.overlay .text p{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+.overlay .text ul{
+   list-style: none;
+}
+.overlay .text ul li{
+    display: inline;
+  
+ }
+ .overlay .text ul li a i{
+    color: white;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 5px;
+    transition: all 0.5s;
+ }
+ .overlay .text ul li:hover a i{
+    border: 1px solid #ff0e83;
+    color: #ff0e83;
+ }
+/* testimonials*/
+#testimonial {
+    background: url(../images/cc1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+#testimonial h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+   
+}
+#testimonial .testimonial__content{
+  width: 76%;
+  margin: 0 auto;
+  border: 4px solid #ff0e83;
+  text-align: center;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+#testimonial .testimonial__content h3{
+    color: white;
+    font-size: 1.3rem;
+  }
+  #testimonial .testimonial__content p{
+    text-align: center;
+  }
+#testimonial .testimonial__content i{
+  color: #2CBEFF;
+}
+.testimonial__content .testimonial__item h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 5px 0;
 }
 
+/* Override OwlCarousel */
+.owl-theme .owl-dots .owl-dot  {
+    outline: none;
+    color: rebeccapurple;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: black !important;
+    z-index: -1;
+}
+/* Contact */
+#contact {
+    margin: 3.5rem 0;
+}
+#contact h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 4.2rem;
+   margin-bottom: 3rem;
+}
+#contact .contact__content{
+   width: 78%;
+   margin: 0 auto;
+ }
+ textarea{
+    min-height: 12em;
+    resize: none;
+ }
+ .form-control{
+    width: 100%;
+    color: #000;
+    padding: 1em;
+    border: 1px solid #000;
+    font-size: 15px;
+    background: rgba(255, 252, 255, 0.55);
+    outline: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+.row {
+    display: flex;
+}
+.col-6 {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 0 15px ;
+}
+.col-12 {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 15px ;
+}
+.btn-contact {
+    color: black;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.btn-contact:hover {
+    color: white !important;
+    background-color: black !important;
+    border: none;
+    border-radius: 0;
+}
+/* map */
+#map {
+    margin: 0 10px;
+}
+#map .map__content{
+    padding-top: 48px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 48px;
+      display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.map__item p a {
+    text-decoration: none;
+    color: black;
+}
+#map .map__content .map__item{
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+#map .map__content .map__item span:first-child{
+    font-size: 28px;
+    color: #4E2A84;
+}
+#map .map__content .map__item span:nth-child(2){
+    font-size: 15px;
+   
+}
+/* footer */
+footer {
+    padding: 4rem 0;
+    background-color: black;
+}
+.footer__content {
+    padding: 3rem 0;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+}
+.footer__item {
+    width: 25%;
+    line-height: 30px;
+    padding: 0 1.2rem;
+}
+.footer__item h3{
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #ff0e83;
+    padding-bottom: 16px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
 
+.footer__item ul{
+    margin-top: 15px;
+    list-style: none;
+}
+.footer__item p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.about ul li{
+    display: inline;
+  
+ }
+ .work ul {
+    margin-top: 0;
+  
+}
+ .work ul li {
+     padding: 2px 0;
+     font-size: 1.2rem;
+     border-bottom: 1px dotted;
+     width: 100%;
+     font-family: 'Segoe UI', sans-serif;
+ }
+ .work ul li span{
+   margin: 0 auto;
+   float: right;
+   font-size: 1rem;
+   font-weight: 400;
+   font-family: 'Segoe UI', sans-serif;
+}
+ .footer__item ul li a i{
+
+    color: white;
+    font-size: 1.2rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 5px;
+    transition: all 0.5s;
+ }
+ .footer__item ul li:hover a i{
+    border: 1px solid #ff0e83;
+    color: #ff0e83;
+ }
+ footer > p{
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+ }
+ footer p a{
+   color: #ff0e83;
+   text-decoration: none;
+ }
+ .footer__input .form-control{
+    color: #000;
+    padding: .7em;
+    border: 1px solid #000;
+    font-size: 13px;
+    width: 75%;
+    background: rgb(255, 255, 255);
+    outline: none;
+    letter-spacing: 1px; 
+ }
+ .footer__input button{
+     margin-top: 15px;
+     margin-bottom: 15px;
+    color: #000;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: 0;
+    border-color: black;
+    padding: 5px 2.5rem;
+ }
+ 
+
+/* backtotop */
+.btn-backtop{
+    color:#0A7DBA;
+    border: 2px solid #0A7DBA;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.backtotop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;   
+}
+.backtotop a{
+   opacity: 0;
+
+}
+.backtotop .cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .backtotop .cd-top--fade-out { 
+    opacity: 1;
+  }
+  /* animation */
+  .animation {
+      width: 100px;
+      height: 100px;
+      background-color: red ;
+      animation-name: demoAmination;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+      position: relative;
+  }
+  @keyframes demoAmination{
+      0%{
+          background-color: red;
+          top:0;
+          left: 0;
+      }
+      25%{
+          background-color: yellow;
+          top:200px;
+          left: 0;
+      }
+      50%{
+          background-color: blue;
+          top:200px;
+          left: 200px;
+      }
+      75% {
+          background-color: orange;
+          top:0;
+          left: 200px;
+          bottom: 200px;
+      }
+      100%{
+          background-color: red;
+          top:0;
+          left: 0;
+      }
+  }
